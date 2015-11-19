@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self.webView loadHTMLString:@"<html><body><h1>Hello UIWebView</h1><a href='callnative'>Click me!!</a><h1 id='msg'></h1></body></html>" baseURL:nil];
 }
 
 - (void)didReceiveMemoryWarning {
